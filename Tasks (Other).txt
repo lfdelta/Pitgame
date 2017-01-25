@@ -1,0 +1,27 @@
+
+• concept art:
+	√ grapple device
+	• player character
+	• antagonists
+	• enemies
+	• environment
+	• color/tone thumbnails
+
+• programming:
+	√ grapple from different locations on player
+		√ child object for arm which follows mouse
+		√ player direction always pointing toward mouse
+	√ fast fall
+	√ visualize grapple vector
+		√ fix color
+	~ visualize grapple range
+		• change color/alpha
+	• stop grapple when touching
+	• pull on player if object exceeds grapple range while grappled
+	• follow player with camera
+
+• design:
+	• pickups and stores
+	• power-ups and upgrades
+	• enemy behaviors
+	• player mobility
