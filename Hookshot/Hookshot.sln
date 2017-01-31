@@ -1,7 +1,7 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{6A765CB2-3CED-7D96-E6F6-1A0140DCD108}") = "Hookshot", "Assembly-CSharp.csproj", "{FB2C026B-FB05-EBC6-8C47-960C181418F4}"
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hookshot", "Assembly-CSharp.csproj", "{FB2C026B-FB05-EBC6-8C47-960C181418F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
