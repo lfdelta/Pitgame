@@ -34,15 +34,21 @@ public class SineMove : MonoBehaviour
 
 
 
-	void OnCollisionEnter2D()
+	void OnCollisionEnter2D(Collision2D collision)
 	{
-		Hit ();
+		//Debug.Log(collision.gameObject.tag);
+
+		//if (collision.gameObject.tag == "Weapon") {
+			Hit ();
+		//}
 	}
 
 
 
 	public void Hit ()
 	{
+		Debug.Log("Hit!");
+
 		hit = true;
 		rb2d.gravityScale = grav;
 		rb2d.sharedMaterial = null;

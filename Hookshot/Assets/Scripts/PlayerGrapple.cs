@@ -10,6 +10,8 @@ public class PlayerGrapple : MonoBehaviour
 	public LayerMask grappleLayer;
 	public LayerMask raycastLayer;
 
+	public GameObject grappleRender;
+
 	private Collider2D grappledObj;
 	private Transform grappleTrans;
 	private GameObject grappleParent;
@@ -23,7 +25,6 @@ public class PlayerGrapple : MonoBehaviour
 	private Vector2 mouseV2;
 	private Vector2 gorigV2;
 
-	public LineRenderer grappleLine;
 	public LineRenderer grappleRange;
 
 	private Transform trans;
@@ -60,7 +61,8 @@ public class PlayerGrapple : MonoBehaviour
 		// hold mouse to grapple
 		if (Input.GetMouseButton(0)) {
 			if (grappledObj != null) {
-				grappleLine.enabled = true;
+				grappleRender = (GameObject) Instantiate(grappleRender, transform.position, transform.rotation) as GameObject;
+				//grappleLine.enabled = true;
 				Pull ();
 			} else {
 				attemptGrapple ();
@@ -69,7 +71,7 @@ public class PlayerGrapple : MonoBehaviour
 
 		if (Input.GetMouseButtonUp (0)) {
 			grappledObj = null;
-			grappleLine.enabled = false;
+			//grappleLine.enabled = false;
 			grappleRange.enabled = false;
 			touchingGrappled = false;
 		}
@@ -135,7 +137,7 @@ public class PlayerGrapple : MonoBehaviour
 		}
 
 		// draw the grapple line
-		grappleLine.SetPositions(new Vector3[] {grappleOrigin.position, grappleTrans.position});
+		//grappleLine.SetPositions(new Vector3[] {grappleOrigin.position, grappleTrans.position});
 	}
 
 
